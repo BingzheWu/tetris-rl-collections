@@ -9,6 +9,15 @@ with other gym-like simulators.
 ## Motivation for this project
 Firstly, we chose the Tetris game because it is simple yet interesting game.
 All of the game information can be obtained from the screen, thus, we believe
+is built on Pytorch. The goal of this project is to ease 
+the developemnt of Tetris AI using deep reinforcement learning algorithms.
+One can easily integrated recent research progresses into their own AI
+wthin our library. The Tteris simulator used in our project is from $https://github.com/jaybutera/tetrisRL$. Note that one can replace this simulator
+with other gym-like simulator. 
+
+## Motivation of this project
+Firstly, we chose the Tetris game because it is simple yet interesting game.
+All of the game information can be obtained from the scren, thus, we believe
 that we can use a CNN to extract those informative features to help us train
 the AI. As a result, we chose to develop Tetris AI in our final project. A major contribution of our project is a flexible RL framework that will be
 introduced in the following section. 
