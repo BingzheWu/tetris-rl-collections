@@ -1,0 +1,27 @@
+agent_type: dqn
+checkpoint_cfg:
+    model_name: dqn_bs
+    model_file: exp/dqn_bs.pth
+    save_best: True
+running_settings:
+    use_cuda: True
+    logger: warnning
+optim_params:
+    criteria_type: MSE
+    optimizer_type: SGD
+    init_lr: 0.01
+hyper_params:
+    steps: 10000
+    early_stop: True
+    gamma: 0.9
+    eval_freq: 10000
+    test_nepisodes: 100
+    eps: 0.1
+dqn_params:
+    batch_size: 100
+    capacity: 3000
+    enable_double: False
+    enable_dueling: False
+env_params:
+    width: 10
+    height: 20
